@@ -18,6 +18,15 @@ function newItem(url, left, bottom){
     })
 }
 
+function move(image, left, bottom){
+    image.style.position = 'fixed'
+    image.style.left = left + 'px'
+    image.style.bottom = bottom + 'px'
+}
+
+let greenCharacter = newImage('assets/green-character.gif')
+move(greenCharacter, 100, 250)
+
 let inventory
 function newInventory(){
     inventory = document.createElement('div')
